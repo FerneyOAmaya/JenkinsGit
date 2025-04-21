@@ -1,0 +1,4 @@
+mkdir prueba
+cd prueba
+echo "Prueba Exitosa !!" > texto
+cat texto
