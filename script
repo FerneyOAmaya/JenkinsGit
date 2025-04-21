@@ -1,16 +1,3 @@
-echo "FROM python:3" > Dockerfile
-echo "RUN pip install Flask" >> Dockerfile
-echo "WORKDIR /home/app" >> Dockerfile
-echo "COPY server.py ." >> Dockerfile
-echo "EXPOSE 5050" >> Dockerfile
-echo "CMD python3 /home/app/server.py" >> Dockerfile
-
-docker stop samplerunning
-docker rm samplerunning
-docker build -t sampleapp .
-docker run -t -d -p 5050:5050 --name samplerunning sampleapp
-docker ps -a
-
 mkdir prueba
 cd prueba
 echo "Prueba Exitosa !!" > texto
