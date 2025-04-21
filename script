@@ -5,11 +5,11 @@ echo "COPY server.py ." >> Dockerfile
 echo "EXPOSE 5050" >> Dockerfile
 echo "CMD python3 /home/app/server.py" >> Dockerfile
 
-sudo docker stop samplerunning
-sudo docker rm samplerunning
-sudo docker build -t sampleapp .
-sudo docker run -t -d -p 5050:5050 --name samplerunning sampleapp
-sudo docker ps -a
+docker stop samplerunning
+docker rm samplerunning
+docker build -t sampleapp .
+docker run -t -d -p 5050:5050 --name samplerunning sampleapp
+docker ps -a
 
 mkdir prueba
 cd prueba
