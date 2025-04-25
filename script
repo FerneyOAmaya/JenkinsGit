@@ -1,4 +1,4 @@
 mkdir prueba
 cd prueba
-echo "Prueba Exitosa !!" > texto
+echo "Prueba Exitosa prueba final !!" > texto
 cat texto
